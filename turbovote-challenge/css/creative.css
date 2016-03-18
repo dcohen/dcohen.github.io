@@ -92,6 +92,11 @@ p {
     background-color: #222;
 }
 
+.bg-blue {
+  color: #fff;
+  background-color: #00bce4;
+}
+
 .text-faded {
     color: rgba(255,255,255,.7);
 }
@@ -104,10 +109,21 @@ aside {
     padding: 50px 0;
 }
 
-#lorem {
+footer {
+  padding: 30px 0 10px 0;
+}
+
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+}
+
+#activities {
   position: relative;
   width: 100%;
-  min-height: auto;
+  min-height: 100%;
   text-align: center;
   color: #fff;
   background-image: url(../img/lonely_mailbox.jpg);
@@ -116,8 +132,20 @@ aside {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
 
-
+#takepart {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/vote_here.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .no-padding {
@@ -198,13 +226,19 @@ aside {
     }
 
     .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
+        border-color: rgba(0,188, 328,0.5);
         background-color: #fff;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #00bce4;
+        color: #000;
+    }
+
+    .navbar-default .nav > li>a, .navbar-default .nav>li>a:focus {
+      font-size: 14px;
+      color: #fff;
+
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -259,11 +293,25 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    background-color: #000;
-    opacity: 0.7;
+    background-color:rgba(0,0,0,0.8);
     padding: 20px;
 }
 
+#activities .five-col .row {
+  margin-top: 20px;
+  background-color:rgba(0,0,0,0.5);
+  padding: 20px;
+
+}
+#activities .five-col .row p {
+  opacity: 1.0;
+}
+
+#takepart .row {
+    margin-top: 20px;
+    background-color:rgba(0,0,0,0.6);
+    padding: 20px;
+}
 @media(min-width:768px) {
     header {
         min-height: 100%;
@@ -288,7 +336,7 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -300,7 +348,7 @@ header .header-content .header-content-inner p {
 
 .service-box {
     margin: 50px auto 0;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 @media(min-width:992px) {
@@ -310,8 +358,28 @@ header .header-content .header-content-inner p {
     .five-col .col-md-2 {
       width: 20%;
     }
-
 }
+
+
+
+.service-box .logo {
+  height: 200px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@media(max-width:480px){
+  .service-box .logo {
+      height: 150px;
+    }
+}
+.service-box .logo img {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 .service-box p {
     margin-bottom: 0;
@@ -388,7 +456,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #00bce4;
+    color: #fff;
 }
 
 .no-gutter > [class*=col-] {
@@ -464,7 +532,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    opacity: 0.9;
+    opacity: 1;
     border-color: #00bce4;
     color: #fff;
     background-color: #00bce4;
@@ -506,10 +574,12 @@ fieldset[disabled] .btn-primary.active {
 
 .btn {
     border: 0;
-    border-radius: 300px;
+    border-radius: 0;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .btn-xl {
@@ -540,4 +610,14 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.footer {
+  min-height: 50px;
+  display: block;
+}
+
+.footer p {
+  margin: 25px 0;
+  display: block;
 }
