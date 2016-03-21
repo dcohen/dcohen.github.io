@@ -402,7 +402,9 @@ header .header-content .header-content-inner p {
       max-width: 150px;
     }
 
+
 }
+
 .service-box .logo img {
   width: 100%;
   position: relative;
@@ -660,4 +662,13 @@ body {
 footer a.social {
   display: inline-block;
   margin-right: 10px;
+  margin-top: -10px;
+}
+@media(max-width:992px){
+
+    footer a.social {
+      margin-top: 0px;
+      margin-right: 0px;
+      display: inline-block;
+    }
 }
