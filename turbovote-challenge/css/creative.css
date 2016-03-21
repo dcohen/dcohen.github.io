@@ -45,7 +45,7 @@ body {
 }
 
 hr {
-    max-width: 50px;
+    max-width: 300px;
     border-color: #ff3232;
     border-width: 3px;
 }
@@ -110,7 +110,7 @@ aside {
 }
 
 footer {
-  padding: 30px 0 10px 0;
+  padding: 20px 0 10px 0;
 }
 
 footer a {
@@ -126,12 +126,29 @@ footer a:hover {
   min-height: 100%;
   text-align: center;
   color: #fff;
-  background-image: url(../img/lonely_mailbox.jpg);
+  background-image: url(../img/starbucks-iphone.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
+
+}
+
+#ballot {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/ballot.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
 }
 
 #takepart {
@@ -146,10 +163,17 @@ footer a:hover {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
+
+
 }
 
 .no-padding {
     padding: 0;
+}
+
+.navbar-brand {
+  font-size: 14px;
 }
 
 .navbar-default {
@@ -269,6 +293,8 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-attachment: fixed;
+
 }
 
 header .header-content {
@@ -368,10 +394,14 @@ header .header-content .header-content-inner p {
   display: inline-block;
 }
 
-@media(max-width:480px){
+@media(max-width:768px){
+  #partners .container {
+    margin: 0 30px;
+  }
   .service-box .logo {
-      height: 150px;
+      max-width: 150px;
     }
+
 }
 .service-box .logo img {
   width: 100%;
@@ -618,6 +648,16 @@ body {
 }
 
 .footer p {
-  margin: 25px 0;
   display: block;
+}
+
+.twitter {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+footer a.social {
+  display: inline-block;
+  margin-right: 10px;
 }
