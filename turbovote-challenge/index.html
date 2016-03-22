@@ -251,7 +251,13 @@
                     </div>
                     <div class="col-sm-6 help-others">
                       <h3>Help Others</h3>
-                      <form action="https://docs.google.com/forms/d/1POp3QhS2lcMpejIqJsLKtFASneXTnFRC2iNcmYUW85U/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+                      
+                        <script type="text/javascript">var submitted=false;</script>
+                        <iframe name="hidden_iframe" id="hidden_iframe"
+                        style="display:none;" onload="if(submitted)
+                        {window.location='confirmation.html';}"></iframe>
+                        <form action="https://docs.google.com/forms/d/1POp3QhS2lcMpejIqJsLKtFASneXTnFRC2iNcmYUW85U/formResponse" method="post"
+                        target="hidden_iframe" onsubmit="submitted=true;">
                         <label class="ss-q-item-label" for="entry_1298168710">
                           <div class="ss-q-title">Name</div>
                         </label>
