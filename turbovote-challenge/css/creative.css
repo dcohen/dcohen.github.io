@@ -120,19 +120,23 @@ footer a:hover {
   color: #fff;
 }
 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+
 #activities {
   position: relative;
   width: 100%;
   min-height: 100%;
   text-align: center;
   color: #fff;
-  background-image: url(../img/turbovote-iphone.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-attachment: fixed;
 }
 
 #ballot {
@@ -141,7 +145,6 @@ footer a:hover {
   min-height: 100%;
   text-align: center;
   color: #fff;
-  background-image: url(../img/ballot.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -156,13 +159,11 @@ footer a:hover {
   min-height: 100%;
   text-align: center;
   color: #fff;
-  background-image: url(../img/vote_here.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-attachment: fixed;
 
 
 }
@@ -286,13 +287,11 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/at-the-polls.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-attachment: fixed;
 
 }
 
@@ -693,6 +692,9 @@ input[type="text"] {
 input[type="submit"] {
   width: 120px;
   margin: 10px 0;
+}
+textarea {
+  padding-top: 10px;
 }
 label {
   display: none;
