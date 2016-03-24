@@ -380,6 +380,10 @@ header .header-content .header-content-inner p {
         margin: 20px auto 0;
     }
     .service-box h3 {
+        line-height: 1.25;
+    }
+    .service-box h3.oneline {
+      margin: 20px 30px 10px 30px;
     }
     .five-col .col-md-2 {
       width: 20%;
